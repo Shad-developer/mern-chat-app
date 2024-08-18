@@ -7,7 +7,7 @@ const useSendMessage = () => {
     setLoading(true);
     try {
       const res = await fetch(
-        `/api/messages/send/${selectedConversation._id}`,
+        `https://mern-chat-app-swart.vercel.app/api/messages/send/${selectedConversation._id}`,
         {
           method: "POST",
           headers: {
